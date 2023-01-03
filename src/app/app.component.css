@@ -1,11 +1,15 @@
 .content {
-  width: 800px;
   margin-top: 60px;
 }
 
 .content main {
   height: 800px;
+  width: var(--content-width);
   background: linear-gradient(to bottom left, #F9EEDF, #FCF5EC);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .content section {
