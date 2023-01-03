@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --text-color: #1D1F31;
+  --button-color: #4946FF;
+  --secondary-text-color: #6A7489;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #E8E3DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

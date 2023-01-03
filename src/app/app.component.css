@@ -1,0 +1,13 @@
+.content {
+  width: 800px;
+  margin-top: 60px;
+}
+
+.content main {
+  height: 800px;
+  background: linear-gradient(to bottom left, #F9EEDF, #FCF5EC);
+}
+
+.content section {
+  background-color: #FFFFFF;
+}
