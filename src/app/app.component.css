@@ -12,6 +12,11 @@
   justify-content: flex-start;
 }
 
+.highlighted {
+  display: flex;
+  flex-direction: row;
+}
+
 .content section {
   background-color: #FFFFFF;
 }
