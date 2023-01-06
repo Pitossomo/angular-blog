@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-info',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-info.component.css']
 })
 export class PostInfoComponent {
-
+  @Input() size = 'big'
 }
