@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { bigPost, smallPosts } from 'src/data/posts';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-blog';
+  bigPost = bigPost
+  smallPosts = smallPosts
 }

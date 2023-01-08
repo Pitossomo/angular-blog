@@ -3,11 +3,12 @@
     <app-header-bar></app-header-bar>
     <app-title-texts></app-title-texts>
     <div class="highlighted">
-      <app-dynamic-post size="big"></app-dynamic-post>
+      <app-dynamic-post size="big" [post]="bigPost"></app-dynamic-post>
       <div class="small-posts">
-        <app-dynamic-post size="small"></app-dynamic-post>
-        <app-dynamic-post size="small"></app-dynamic-post>
-        <app-dynamic-post size="small"></app-dynamic-post>
+        <app-dynamic-post
+          *ngFor="let post of smallPosts"
+          size="small" [post]="post"
+        ></app-dynamic-post>
       </div>
     </div>
   </main>
