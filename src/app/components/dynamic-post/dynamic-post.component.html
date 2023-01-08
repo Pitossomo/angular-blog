@@ -1,4 +1,15 @@
 <div class="{{size}}-post">
-  <img src="assets/img/{{size}}-post.jpg" alt="placeholder" [attr.width]="[size === 'big' ? '360px' : '180px']" />
-  <app-post-info size="{{size}}"></app-post-info>
+  <img src="assets/img/post/{{post.id}}.jpg" alt="{{post.imgAlt}}" [attr.width]="[size === 'big' ? '360px' : '180px']" />
+  <div class="info_text">
+    <span class="category">{{post.category}}</span>
+    <span class="duration">{{post.durationInMinutes}} minutos de leitura</span>  
+  </div>
+  <h2 class="{{size}}">{{ post.title }}</h2>
+  <div class="info_author">
+    <img class="img_author" src="assets/img/author/{{post.author.id}}.jpg" alt="{{post.author.name}}" width="40px" height="40px">
+    <div>
+      <p class="name_author">{{post.author.name}}</p>
+      <p class="date_post">{{post.date}}</p>
+    </div>
+  </div>
 </div>
