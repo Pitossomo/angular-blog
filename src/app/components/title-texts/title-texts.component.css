@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 div {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,11 @@ small {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 60px;
   font-weight: 600;
   margin: 12px;
+  word-wrap: normal;
 }

@@ -2,7 +2,19 @@
   --text-color: #1D1F31;
   --button-color: #4946FF;
   --secondary-text-color: #6A7489;
-  --content-width: 1200px;
+  --content-width: 100vw;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --content-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --content-width: 1200px;
+  }
 }
 
 * {
@@ -20,4 +32,5 @@ body {
   background-color: #E8E3DE;
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }

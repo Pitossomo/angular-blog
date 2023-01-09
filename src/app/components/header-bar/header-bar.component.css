@@ -1,18 +1,25 @@
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  width: 100%;
   padding: 24px;
-  width: var(--content-width);
+  width: calc(var(--content-width) - 4*24px);
 }
 
 .logo {
-  width: 128px;
+  visibility: hidden;
+  width: 150px;
+  height: 72px; 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .button_blog_small {
@@ -21,12 +28,11 @@
   height: fit-content;
   width: fit-content;
   background-color: lightgray;
-  padding: 1px;
   border-radius: 4px;
 }
 
 .header nav a {
-  justify-self: center;
+  text-align: center;
   margin: 8px;
 }
 
@@ -39,3 +45,12 @@
   font-weight: bold;
 }
 
+@media (min-width: 900px) {
+  .logo {
+    visibility: visible;
+  }
+
+  .header {
+    flex-direction: row ;
+  }
+}

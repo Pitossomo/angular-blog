@@ -24,6 +24,7 @@
   margin: 16px;
   height: 142px;
   flex-wrap: wrap;
+  width: 460px;
 }
 
 .category {
@@ -69,6 +70,7 @@ h2.small {
   flex-direction: row;
   justify-content: flex-start;
   margin: 16px;
+  width: 200px;
 }
 
 .info_author div {
